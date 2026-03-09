@@ -3,10 +3,10 @@ import bgOverly from '../../assets/vector1.png'
 const TopCards = ({ inProgressCount, resolvedCount }) => {
 
     return (
-        <div className='w-11/12 mx-auto py-16 flex gap-4'>
+        <div className='w-11/12 mx-auto py-16 md:flex md:gap-4'>
 
             {/* In Progress */}
-            <div className='relative bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] py-24 px-44 rounded-2xl text-center text-white w-[50%]'>
+            <div className='relative bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] py-24 px-44 rounded-2xl text-center text-white md:w-[50%] mb-3 md:mb-0'>
 
                 <img src={bgOverly} className="absolute inset-0 w-full h-full object-contain object-left" />
                 <img src={bgOverly} className="absolute right-0 top-0 h-full object-contain scale-x-[-1]" />
@@ -19,7 +19,7 @@ const TopCards = ({ inProgressCount, resolvedCount }) => {
             </div>
 
             {/* Resolved */}
-            <div className='relative bg-gradient-to-tl from-[#00827A] to-[#54CF68] py-24 px-44 rounded-2xl text-center text-white w-[50%]'>
+            <div className='relative bg-gradient-to-tl from-[#00827A] to-[#54CF68] py-24 px-44 rounded-2xl text-center text-white md:w-[50%]'>
 
                 <img src={bgOverly} className="absolute inset-0 w-full h-full object-contain object-left" />
                 <img src={bgOverly} className="absolute right-0 top-0 h-full object-contain scale-x-[-1]" />

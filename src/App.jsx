@@ -40,7 +40,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className="bg-[#f5f5f5]">
+      <div className="bg-[#f5f5f5] pb-24">
 
         <TopCards
           inProgressCount={inProgress.length}
