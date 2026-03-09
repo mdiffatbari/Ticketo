@@ -5,6 +5,9 @@ import TopCards from "./components/TopCards/TopCards";
 import TaskStatus from "./pages/TaskStatus/TaskStatus";
 import Tickets from "./pages/Tickets/Tickets";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
 
   const [tickets, setTickets] = useState([])
@@ -64,6 +67,7 @@ function App() {
       </div>
 
       <Footer />
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }
