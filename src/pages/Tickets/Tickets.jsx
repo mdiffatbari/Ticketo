@@ -1,19 +1,22 @@
-import React, { use } from 'react';
-import Ticket from '../Ticket/Ticket';
+import Ticket from "../Ticket/Ticket"
 
-const Tickets = ({taskData}) => {
-    const taskJson = use(taskData);
-    console.log(taskJson)
-    return (
-        <div className='pb-8'>
-            <h1 className='mb-3 text-2xl font-semibold'>Customer Tickets</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                {
-                taskJson.map(singleTask => <Ticket singleTask ={singleTask}></Ticket>)
-            }
-            </div>
-        </div>
-    );
-};
+const Tickets = ({ tickets, handleAddTask }) => {
 
-export default Tickets;
+  return (
+    <div className="grid md:grid-cols-2 gap-5">
+
+      {
+        tickets.map(ticket => (
+          <Ticket
+            key={ticket.id}
+            singleTask={ticket}
+            handleAddTask={handleAddTask}
+          />
+        ))
+      }
+
+    </div>
+  )
+}
+
+export default Tickets
