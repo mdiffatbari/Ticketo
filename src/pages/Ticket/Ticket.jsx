@@ -1,19 +1,19 @@
 import React from 'react';
 import { CiCalendarDate } from "react-icons/ci";
 
-const Ticket = () => {
+const Ticket = ({singleTask}) => {
     return (
         <div>
-            <div className="card shadow-2xl p-10">
-                <div>
-                    <h1>Login Issues - Can't Access Account</h1>
-                    <button>Open</button>
+            <div className="card shadow-lg p-10">
+                <div className='flex justify-between items-center'>
+                    <h1 className='text-[20px] font-semibold mb-2'>{singleTask.title}</h1>
+                    <button className="btn btn-soft btn-accent">Accent</button>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio laudantium iste commodi recusandae in minus quod modi unde omnis, a assumenda excepturi placeat aspernatur sed eaque, at, aperiam reiciendis nam. Dignissimos modi ratione aliquam ipsum qui commodi eius consectetur praesentium natus! Corporis nam nobis ipsa quos magnam, optio quas.</p>
+                <p>{singleTask.description}</p>
                 <div className='flex justify-between items-center mt-4'>
                     <div className='flex gap-3'>
-                        <h1>#0001</h1>
-                        <h2>High Priority</h2>
+                        <h1>#{singleTask.id}</h1>
+                        <h2>{singleTask.priority} Priority</h2>
                     </div>
                     <div className='flex justify-between gap-3'>
                         <p>jhon smith</p>

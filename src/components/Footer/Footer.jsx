@@ -4,7 +4,7 @@ import { FaXTwitter, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa6"
 const Footer = () => {
     return (
         <div>
-            <div className="bg-black text-gray-300 mt-16">
+            <div className="bg-black text-gray-300">
                 <div className="max-w-11/12 mx-auto px-6 py-12 grid gap-8 md:grid-cols-2 lg:grid-cols-6">
 
                     {/* Brand */}
